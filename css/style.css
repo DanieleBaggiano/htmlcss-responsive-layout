@@ -20,6 +20,10 @@
     background-color: rgb(151 146 228);
 }
 
+.black {
+    background-color: black;
+}
+
 /* Utilities */
 .flex {
     display: flex;
@@ -342,3 +346,40 @@ a {
 }
 
 /* FOOTER */
+/* get started */
+.started {
+    width: 80%;
+    margin: auto;
+
+    /* debug */
+    height: 600px;
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 992px) {
+    .started {
+        width: 50%;
+
+        /* debug */
+        height: 300px;
+    }
+}
+
+/* fine footer */
+.lorem {
+    width: 80%;
+    margin: auto;
+
+    /* debug */
+    height: 200px;
+    border: 1px solid white;
+}
+
+@media screen and (min-width: 992px) {
+    .lorem {
+        width: 30%;
+
+        /* debug */
+        height: 100px;
+    }
+}

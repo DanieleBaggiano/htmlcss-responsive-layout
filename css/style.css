@@ -81,8 +81,16 @@
 }
 
 .title-h5 {
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1.4rem;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* HEADER */
@@ -127,11 +135,6 @@ a {
     padding: 5px;
 }
 
-.button-menu {
-    border: none;
-    cursor: pointer;
-}
-
 .fa-bars {
     color: white;
     font-size: 1.5rem;
@@ -157,27 +160,57 @@ a {
 .demo-app {
     margin: 100px auto 0 auto;
     background-color: rgb(181 221 255);
+    width: 80%;
+    padding: 30px 30px 0 30px;
 
     /* debug */
-    height: 600px;
-    width: 80%;
+    /* height: 600px; */
 }
 
 .title-demo {
-    padding: 30px 0;
+    padding-bottom: 30px;
 }
 
 p {
-    text-align: center;
+    padding-bottom: 30px;
+}
+
+.app-store {
+    color: white;
+    border-radius: 25px;
+    padding: 12px 40px;
+    display: block;
+}
+
+.fa-apple {
+    padding-right: 5px;
+}
+
+.phone {
+    padding-top: 30px;
+    margin-bottom: -4px
 }
 
 .clean-code, .web-design, .development, .branding {
     background-color: rgb(181 221 255);
     margin: 25px auto;
+    width: 80%;
 
     /* debug */
-    width: 80%;
-    height: 300px;
+    /* height: 300px; */
+}
+
+.clean-code, .web-design, .development, .branding {
+    text-align: center;
+    padding: 30px 30px 0;
+}
+
+.title-code, .title-web-design, .title-development, .title-branding {
+    padding: 30px 0;
+}
+
+.fa-file-code, .fa-compass-drafting, .fa-laptop-code, .fa-bullhorn {
+    font-size: 3.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -191,7 +224,11 @@ p {
         width: 65%;
 
         /* debug */
-        height: 400px;
+        /* height: 400px; */
+    }
+
+    .phone {
+        max-width: 50%;
     }
 
     .clean-code {
@@ -200,7 +237,7 @@ p {
         margin-bottom: 0;
 
         /* debug */
-        height: 400px;
+        /* height: 400px; */
     }
 
     .web-design, .development, .branding {
@@ -208,7 +245,7 @@ p {
         margin-top: 0;
 
         /* debug */
-        height: 300px;
+        /* height: 300px; */
     }
 }
 
@@ -221,7 +258,7 @@ p {
      .web-design, .development, .branding {
         
         /* debug */
-        height: 200px;
+        /* height: 200px; */
     }
 }
 

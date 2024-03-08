@@ -5,6 +5,32 @@
     box-sizing: border-box;
 }
 
+/* PT Sans */
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-sans-bold-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
 /* COMMON */
 /* Layout */
 .container {
@@ -60,11 +86,12 @@ header {
 }
 
 .logo {
+    padding: 10px;
 
     /* debug */
-    height: 50px;
-    width: 100px;
-    background-color: red;
+    /* height: 50px; */
+    /* width: 100px; */
+    /* background-color: red; */
 }
 
 .header-link {
@@ -74,7 +101,9 @@ header {
 ul {
     display: flex;
     list-style-type: none;
-    gap: 10px;
+    gap: 15px;
+    font-size: .9rem;
+    align-items: center;
 }
 
 a {
@@ -83,10 +112,20 @@ a {
 }
 
 .button-start {
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: white;
     border: none;
-    padding: 0 5px;
+    padding: 5px;
+}
+
+.button-menu {
+    border: none;
+    cursor: pointer;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 992px) {

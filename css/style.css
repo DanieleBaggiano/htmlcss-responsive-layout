@@ -229,6 +229,7 @@ p {
 
     .phone {
         max-width: 50%;
+        object-fit: cover;
     }
 
     .clean-code {
@@ -252,6 +253,14 @@ p {
 @media screen and (min-width: 992px) {
     .columns {
         width: 75%;
+    }
+
+    .demo-app {
+        display: flex;
+    }
+
+    .demo-dimension {
+        width: 50%;
     }
 
     .demo-app, .clean-code,

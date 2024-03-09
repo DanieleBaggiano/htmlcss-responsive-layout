@@ -46,6 +46,10 @@
     color: rgb(0 132 253);
 }
 
+.white-title {
+    color: white;
+}
+
 .violet {
     background-color: rgb(151 146 228);
 }
@@ -67,11 +71,6 @@
     align-items: center;
 }
 
-.column {
-    flex-direction: column;
-    gap: 25px;
-}
-
 .padding {
     padding: 30px 0;
 }
@@ -82,6 +81,14 @@
 
 .title-h5 {
     font-size: 1.4rem;
+}
+
+.title-h4 {
+    font-size: 1.6rem;
+}
+
+.title-h3 {
+    font-size: 2rem;
 }
 
 .button {
@@ -157,6 +164,10 @@ a {
 
 /* MAIN */
 /* prime colonne */
+.columns {
+    padding-bottom: 50px;
+}
+
 .demo-app {
     margin: 100px auto 0 auto;
     background-color: rgb(181 221 255);
@@ -263,6 +274,10 @@ p {
         width: 50%;
     }
 
+    .phone {
+        margin: 0;
+    }
+
     .demo-app, .clean-code,
      .web-design, .development, .branding {
         
@@ -277,17 +292,47 @@ p {
     width: 76%;
 
     /* debug */
-    height: 600px;
-    border: 1px solid black;
+    /* height: 600px; */
+    /* border: 1px solid black; */
+}
+
+.title-plan {
+    padding: 50px 0 40px;
+}
+
+.p-plan {
+    line-height: 1.5;
 }
 
 .app-development {
     background-color: white;
     margin: 20px auto;
     width: 76%;
+    text-align: center;
+    padding: 20px;
 
     /* debug */
-    height: 600px;
+    /* height: 600px; */
+}
+
+.p-app-dev {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+
+.down-arrow-circle {
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.fa-arrow-down {
+    transform: translate(50%, 50%);
+    position: relative;
+    right: 18%;
 }
 
 @media screen and (min-width: 768px) {
@@ -297,24 +342,25 @@ p {
 }
 
 @media screen and (min-width: 992px) {
-    .violet {
+    .container-plan {
         display: flex;
         flex-wrap: nowrap;
         gap: 20px;
-        padding: 30px 160px;
-    }
-
-    .container .strategic-plan {
+        padding: 0 250px 40px;
 
         /* debug */
-        height: 400px;
+        /* height: 400px; */
+    }
+
+    .strategic-plan {
+        padding-top: 30px;
     }
 
     .container .app-development {
-        margin: 0;
+        margin: 80px 0 0 ;
 
         /* debug */
-        height: 400px;
+        /* height: 400px; */
     }
 }
 
@@ -355,6 +401,13 @@ p {
 
         /* debug */
         height: 150px;
+    }
+
+    .nat, .celia, .bob {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30px 160px;
     }
 }
 
@@ -397,6 +450,10 @@ p {
 }
 
 @media screen and (min-width: 992px) {
+    .benefits {
+        padding: 30px 160px;
+    }
+
     .hight-quality, .creative-team,
     .amazing-results, .best-pricing,
     .innovations, .support {

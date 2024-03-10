@@ -132,13 +132,16 @@ header {
 
 ul {
     display: flex;
-    list-style-type: none;
-    gap: 15px;
     font-size: .9rem;
+    gap: 15px;
+}
+
+.list-style {
+    list-style-type: none;
     align-items: center;
 }
 
-a {
+.decoration-l {
     text-decoration: none;
     color: white;
 }
@@ -407,7 +410,7 @@ p {
     /* height: 400px; */
 }
 
-.testimonial1, .testimonial2, .testimonial3, {
+.testimonial1, .testimonial2, .testimonial3 {
     border-radius: 50%;
     object-fit: cover;
     height: 200px;
@@ -596,18 +599,57 @@ p {
 .started {
     width: 80%;
     margin: auto;
+    text-align: center;
 
     /* debug */
-    height: 600px;
-    border: 1px solid black;
+    /* height: 600px; */
+    /* border: 1px solid black; */
 }
 
-@media screen and (min-width: 992px) {
+.lightviolet {
+    color: rgb(204 202 241);
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.pricing-title {
+    padding: 20px 0;
+}
+
+.free {
+    font-size: 4rem;
+    color: rgb(253 193 95);
+}
+
+.started-b {
+    background-color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 20px 60px;
+}
+
+.copyright {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 20px;
+}
+
+.copyright-l {
+    gap: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .pricing-title {
+        font-size: 1.8rem;
+    }
+
     .started {
         width: 50%;
 
         /* debug */
-        height: 300px;
+        /* height: 300px; */
     }
 }
 
@@ -615,17 +657,23 @@ p {
 .lorem {
     width: 80%;
     margin: auto;
+    text-align: center;
 
     /* debug */
-    height: 200px;
-    border: 1px solid white;
+    /* height: 200px; */
+    /* border: 1px solid white; */
 }
 
-@media screen and (min-width: 992px) {
+.lorem-p {
+    font-size: 0.9rem;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
     .lorem {
         width: 30%;
 
         /* debug */
-        height: 100px;
+        /* height: 100px; */
     }
 }

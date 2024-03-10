@@ -404,7 +404,7 @@ p {
     /* height: 400px; */
 }
 
-.testimonial1 {
+.testimonial1, .testimonial2, .testimonial3 {
     border-radius: 50%;
     object-fit: cover;
     height: 200px;
@@ -419,8 +419,16 @@ p {
 }
 
 @media screen and (min-width:768px) {
-    .expert-partners, .nat, .celia, .bob {
+    .expert-partners {
         width: 97%;
+    }
+
+    .nat, .celia, .bob {
+        width: 97%;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        padding: 0 30px 0 10px;
 
         /* debug */
         /* height: 200px; */
@@ -441,9 +449,7 @@ p {
 
     .nat, .celia, .bob {
         display: flex;
-        flex-wrap: wrap;
         gap: 20px;
-        padding: 30px 160px;
     }
 }
 

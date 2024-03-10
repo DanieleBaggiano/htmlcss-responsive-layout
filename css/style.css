@@ -194,7 +194,7 @@ p {
     padding-bottom: 30px;
 }
 
-.app-store, .more {
+.app-store, .more, .linkedin-b {
     color: white;
     border-radius: 25px;
     padding: 12px 40px;
@@ -286,8 +286,7 @@ p {
         margin: 0;
     }
 
-    .demo-app, .clean-code,
-     .web-design, .development, .branding {
+    .demo-app, .clean-code, .web-design, .development, .branding {
         
         /* debug */
         /* height: 200px; */
@@ -308,7 +307,7 @@ p {
     padding: 150px 0 40px;
 }
 
-.p-plan .nat-par {
+.p-plan .nat-par, .about-p {
     line-height: 1.5;
 }
 
@@ -408,7 +407,7 @@ p {
     /* height: 400px; */
 }
 
-.testimonial1, .testimonial2, .testimonial3 {
+.testimonial1, .testimonial2, .testimonial3, {
     border-radius: 50%;
     object-fit: cover;
     height: 200px;
@@ -525,8 +524,12 @@ p {
     margin: 50px auto 20px;
 
     /* debug */
-    height: 1000px;
-    border: 1px solid black;
+    /* height: 1000px; */
+    /* border: 1px solid black; */
+}
+
+.about-title {
+    padding-bottom: 30px;
 }
 
 .linkedin {
@@ -534,8 +537,30 @@ p {
     margin: 20px auto 50px;
 
     /* debug */
-    height: 400px;
-    border: 1px solid black;
+    /* height: 400px; */
+    /* border: 1px solid black; */
+}
+
+.about-photo {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
+}
+
+.about-quote {
+    font-size: 4rem;
+    position: relative;
+    bottom: 130px;
+    right: 55px;
+}
+
+.linkedin-title {
+    padding: 20px 0;
+}
+
+.fa-linkedin {
+    padding-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -548,6 +573,10 @@ p {
     .about-us, .linkedin {
         margin: 0;
     }
+
+    .about-us {
+        padding-right: 30px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -558,7 +587,7 @@ p {
     .about-us {
 
         /* debug */
-        height: 450px;
+        /* height: 450px; */
     }
 }
 
